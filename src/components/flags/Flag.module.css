@@ -10,3 +10,10 @@
   margin: 0;
   padding: 0;
 }
+
+.btncontainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}

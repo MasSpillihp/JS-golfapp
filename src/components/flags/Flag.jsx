@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 import classes from "./Flag.module.css";
 
 import Card from "../UI/Card";
 import FlagItem from "./flagItem/FlagItem";
+
+import { Button } from "@mui/material";
 
 const TEMP_FLAGS = [
   {
@@ -33,9 +35,14 @@ function Flag(props) {
   ));
 
   return (
-    <section className={classes.flags}>
-      <Card>{flagList}</Card>
-    </section>
+    <Fragment>
+      <section className={classes.flags}>
+        <Card>{flagList}</Card>
+      </section>
+      <section className={classes.btncontainer}>
+        <Button variant="contained">Save</Button>
+      </section>
+    </Fragment>
   );
 }
 
